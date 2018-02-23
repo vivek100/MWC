@@ -280,5 +280,7 @@ io.on('connection', function(socket){
            });
 });
 
-let port = process.env.PORT || 8080; 
-app.listen(port);
+const REST_PORT = (process.env.PORT || 5000);
+http.listen(REST_PORT, function(){
+    console.log('listening on *:8080');
+  });
