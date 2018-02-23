@@ -25,7 +25,9 @@ const accessToken = 'EAAEUQvxOrEMBAP9PGeNcddvk2UODlUZCYMX9nzZBElmZAfAZCil0nlPler
 
   var request = require('request');
 
-
+    fs.readFile('masterindex.html',function (err, data){
+        console.log("This is error"+err)
+    });
 
 app.get('/', function (req, res) {
     fs.readFile('masterindex.html',function (err, data){
